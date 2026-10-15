@@ -45,7 +45,7 @@ All values are stored in [checks.json](checks.json). The [response CSV](toy_freq
 
 ## Random-feature geometry
 
-For a feature $\tanh(ax+b)$, the centre is $c=-b/a$ when $a\ne0$. Multiplying both $a$ and $b$ by the same nonzero constant leaves this centre unchanged, even though it changes transition width. The script verifies that identity on 100,000 Gaussian draws using a common factor of three.
+For a feature $\tanh(ax+b)$, the centre is $c=-b/a$ when $a\ne0$. Multiplying both $a$ and $b$ by the same nonzero constant leaves this centre unchanged. A factor with magnitude other than one changes the transition width. The script verifies that identity on 100,000 Gaussian draws using a common factor of three.
 
 For independent standard-normal $a$ and $b$, the ratio $-b/a$ has a standard Cauchy distribution. Hence, for $\epsilon>0$,
 
