@@ -1,0 +1,33 @@
+{
+  "status": "synthetic numerical checks",
+  "center_scale_check": {
+    "samples": 100000,
+    "ratio_identity_checked": true,
+    "interval": [
+      -0.05,
+      0.05
+    ],
+    "one_feature_center_probability": 0.031804502512352756,
+    "twenty_feature_at_least_one_center_probability": 0.476084589295388,
+    "warning": "Center presence alone neither ensures adequate width nor approximation accuracy."
+  },
+  "conditional_readout_variance_check": {
+    "readout_mean": 0.8333333333333334,
+    "readout_variance": 0.16666666666666666,
+    "test_prediction_mean": 2.5,
+    "latent_function_variance": 1.5,
+    "observation_prediction_variance": 2.5,
+    "variance_of_repeated_conditional_mean_at_fixed_features": 0
+  },
+  "frequency_response_probe": {
+    "degrees_of_freedom": 48,
+    "direct_modal_cross_checks": 4,
+    "coarse_queries": 25,
+    "reference_grid_points": 30001,
+    "reference_peak_frequency": 0.032374,
+    "reference_grid_maximum": 1273.0792535592711,
+    "coarse_sample_maximum": 52.1950915815726,
+    "coarse_max_to_reference_max_ratio": 0.04099909054023598,
+    "warning": "Reference is a dense-grid maximum, not a certified continuous maximum. No learned model or adaptive strategy was tested. This toy does not prove an expensive-simulation bottleneck."
+  }
+}
